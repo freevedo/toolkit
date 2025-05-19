@@ -35,3 +35,12 @@ Users of Server Pro should contact `support@overleaf.com` for assistance.
 
 In both cases, it is a good idea to include the output of the `bin/doctor` script in your message.
 
+
+## Mac OS considerations
+
+- please install coreutils and gnu-tar via homebrew:
+
+```sh
+brew install coreutils gnu-tar
+```
+- This code has been updated to work with arm macs. The docker-compose file has been updated to use the `linux/amd64` platform. If you are using an arm mac, you may need to add `platform: linux/arm64` to the docker-compose file for the services that are not working.
