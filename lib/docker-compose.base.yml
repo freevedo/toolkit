@@ -2,6 +2,7 @@
 services:
 
     sharelatex:
+        platform: linux/amd64
         restart: always
         image: "${IMAGE}"
         container_name: sharelatex
